@@ -1,12 +1,12 @@
-import "../styles/globals.css"
-import Layout from "../components/common/Layout"
-import type { AppProps } from "next/app"
-import type { DehydratedState } from "react-query"
+import type { AppProps } from "next/app";
+import type { DehydratedState } from "react-query";
 
-function MyApp({ Component, pageProps }: AppProps<{dehydratedState: DehydratedState}>) {
-  return <Layout dehydratedState={pageProps.dehydratedState}>
+import Layout from "../components/common/Layout";
+
+const App = ({ Component, pageProps }: AppProps<{dehydratedState: DehydratedState}>) => (
+  <Layout dehydratedState={pageProps.dehydratedState}>
     <Component {...pageProps} />
   </Layout>
-}
+);
 
-export default MyApp
+export default App;

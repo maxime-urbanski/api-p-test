@@ -1,0 +1,19 @@
+App\Entity\Hero:
+    one:
+        name: 'Dr. Nice'
+    two:  
+        name: 'Bombasto'
+    three:
+        name: 'Celeritas'
+    for:
+        name: 'Magneta'
+    five: 
+        name: 'RubberMan'
+    six:
+        name: 'Dynama'
+    seven:  
+        name: 'Dr. IQ'
+    height:
+        name: 'Magma'
+    nine:
+        name: 'Tornado' 
